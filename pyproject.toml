@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "claude-sessions-to-obsidian"
+version = "0.1.0"
+description = "Export Claude Code session transcripts to Markdown notes in an Obsidian vault, with credential redaction."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Nicola Valigi" }]
+keywords = ["claude-code", "obsidian", "markdown", "export", "notes"]
+
+[project.urls]
+Homepage = "https://github.com/nicolavaligi/claude-sessions-to-obsidian"
+
+[project.scripts]
+claude2obsidian = "claude_sessions_to_obsidian:main"
+
+[tool.setuptools]
+py-modules = ["claude_sessions_to_obsidian"]
